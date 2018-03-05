@@ -1,6 +1,7 @@
-// TextLab08st.java
-// This is the student, starting file for the TextLab08 assignment.
-
+//Sophia Swanberg
+//100 Point Version 
+//APCS Period 1
+//5 March 2018
 
 import java.util.Scanner;
 
@@ -34,20 +35,15 @@ class FullName
 	}
 
 	public String lastNameFirst()
-	{
-		/*
-		 *  80 point precondition: The entered name consists of a First Name and a Last Name seprated by a single space.
-		 *
-		 * 100 point precondition: The entered name consists of a First Name, Last Name and any number of Middle Names.
-		 *                         NOTE: "any number" means it is possible not to have no Middle Name at all.
-		 *                         You can assume the user is not entering any extra spaces.
-		 */
-
-
-
-
-
-
+	{	
+		String firstName = name.substring(0, name.lastIndexOf(" ")); //grabs the first index of the string
+																	 //up to the last instance of a space
+		
+		String lastName = name.substring(name.lastIndexOf(" ")); //grabs the string after the last instance
+																 //of a space 
+		return lastName + ", " + firstName;
 	}
+	
+	
 }
 
